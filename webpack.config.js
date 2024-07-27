@@ -17,6 +17,10 @@ module.exports = {
             {
                 test: /\.jpg$/i,
                 type: 'asset/resource',
+            },
+            {
+                test: /\.(woff|woff2)$/i,
+                type: 'asset/resource',
             }
         ]
     },
@@ -24,6 +28,6 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         static: './dist',
-        watchFiles:['src/*.html','src/*.js', 'dist/style.css'],
+        watchFiles: ['src/*.html', 'src/*.js', 'dist/style.css', 'src/*woff', 'src/*.woff2'],
     }
 };
