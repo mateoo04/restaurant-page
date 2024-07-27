@@ -24,5 +24,6 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         static: './dist',
+        watchFiles:['src/*.html','src/*.js', 'dist/style.css'],
     }
 };
