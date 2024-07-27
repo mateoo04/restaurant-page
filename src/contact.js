@@ -47,6 +47,7 @@ export default function loadContact() {
     const phoneNumInput = document.createElement('input');
     phoneNumInput.name = 'phone-number';
     phoneNumInput.id = 'phone-number';
+    phoneNumInput.pattern = "[0-9]{8,16}"
     phoneNumInput.type = 'tel';
     phoneNumLabel.append(phoneNumInput);
 

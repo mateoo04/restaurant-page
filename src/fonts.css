@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Borna Nova SC Bold';
+    src: url('./borna-nova-sc.woff2') format('woff2'),
+    url('./borna-nova-sc.woff') format('woff');
+}
+
+header h1{
+    font-family: 'Borna Nova SC Bold', Arial, Helvetica, sans-serif;
+}
