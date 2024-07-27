@@ -37,7 +37,7 @@ export default function loadMenu() {
 
     content.innerHTML = '';
 
-    const headline = document.createElement('h1');
+    const headline = document.createElement('h2');
     headline.textContent = 'Menu';
 
     content.appendChild(headline);

@@ -2,16 +2,13 @@ import RestaurantImage from './restaurant.jpg'
 
 export default function loadHome() {
     const content = document.getElementById('content');
-    content.classList.add('home-content')
+    content.classList = 'home-content';
 
     content.innerHTML = '';
 
-    const headline = document.createElement('h1');
-    headline.textContent = 'Sunset Terrace';
-
-    const paragraph = document.createElement('p');
-    paragraph.classList.add('about');
-    paragraph.textContent = "Welcome to Sunset Terrace, where the vibrant flavors of the Mediterranean come alive in an enchanting atmosphere. Nestled in the heart of Mediterranean Europe, our restaurant offers a dining experience like no other, blending culinary artistry with stunning views of the sun setting over the azure waters."
+    const aboutText = document.createElement('p');
+    aboutText.classList.add('about');
+    aboutText.textContent = "Welcome to Sunset Terrace, where the vibrant flavors of the Mediterranean come alive in an enchanting atmosphere. Nestled in the heart of Mediterranean Europe, our restaurant offers a dining experience like no other, blending culinary artistry with stunning views of the sun setting over the azure waters.";
 
     const imageElement = document.createElement('img');
     imageElement.id = 'restaurant-image';
@@ -29,5 +26,6 @@ export default function loadHome() {
     locationHeader.textContent = 'Location';
     const locationText = 'Via Tilla 34, Rome, Italy'
     locationContainer.append(locationHeader,locationText);
-    content.append(headline, paragraph, imageElement, hoursContainer, locationContainer);
+    
+    content.append(aboutText, imageElement, hoursContainer, locationContainer);
 }
